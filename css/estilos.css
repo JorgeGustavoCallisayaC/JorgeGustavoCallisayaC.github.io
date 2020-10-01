@@ -1,0 +1,466 @@
+/* Fuentes personalizadas */
+
+@font-face{
+    font-family: ubuntuRegular;
+    src: url(fuentes/Ubuntu-R.ttf) format('truetype');
+    }
+    
+    @font-face{
+    font-family: ubuntuBold;
+    src: url(fuentes/Ubuntu-B.ttf) format('truetype');
+    }
+    
+    @font-face{
+    font-family: ubuntuItalic;
+    src: url(fuentes/Ubuntu-I.ttf) format('truetype');
+    }
+    
+    @font-face{
+    font-family: ubuntuBoldItalic;
+    src: url(fuentes/Ubuntu-BI.ttf) format('truetype');
+    }
+    
+    /* Estilos basicos */
+
+h1,h2,h3,h4,h5{
+
+    font-family: ubuntuBold;
+     
+    }
+    
+    h6{
+        font-family: ubuntuRegular;
+    
+    }
+
+    h1{
+
+        color: white;
+        display:inline;
+        font-size: 48px;
+        /*margin-top:10px;*/
+        letter-spacing: 0px;
+        margin:0px;
+        padding:0px;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        top:-20%;
+        
+    }
+    h2{
+
+            color: white;
+            font-size: 16px;
+            margin:0px;
+            margin-top:10px;
+            letter-spacing: 0px;
+            padding:0px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+            top:-20%;
+
+    }
+
+    #tipo{
+        position:absolute;
+        transform:translate(100px, 10px);
+        -webkit-transform:translate(100px, 10px);
+
+    }
+
+    h3{
+        font-size:36px;
+        margin:0px;
+        padding:0px;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        
+    }
+
+    h4{
+        color:black;
+        font-size:14px;
+        margin:0px;
+        padding:0px;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+
+    h6{
+        color:white;
+        font-size: 12px;
+    }
+
+    p{
+        color:black;
+        font-family: ubuntuRegular;
+        font-size:12px;
+        text-align:justify;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    }
+
+    /*Menu de navegacion*/
+
+    nav{
+    display:inline; 
+    float:right;
+    margin:20px;
+    }
+
+    nav ul{
+        background-color: grey;
+        display:inline;
+        font-family:ubuntuRegular;
+        font-size: 12px;
+        margin-left:0px;
+        color:white;
+        padding-left:0px;
+        position:relative;
+        width:50%;
+    }
+
+    nav ul li{
+        display: inline;
+        text-align:center;
+        
+    }
+
+    nav ul li a{
+        background:rgba(185, 161, 161, 0);
+        background: rgb(0, 13, 83);
+        border: 1px solid white;
+        border-radius: 0px 10px 0px 10px;
+        box-shadow: 0px 0px 5px white;
+        color: white;
+        float:right;
+        text-decoration: none;
+        width:80px;
+        -webkit-border-radius: 3px 20px 3px 20px;
+        -moz-border-radius: 0px 10px 0px 10px;
+        -o-border-radius: 0px 10px 0px 10px;
+        -webkit-box-shadow: 0px 0px 15px white;
+        /*-webkit-transition: -webkit-box-shadow 1s, background 1s;*/
+    }
+
+    nav ul li a:hover{
+        background:rgba(255,255,255,0.8);
+        box-shadow: 0px 0px 25px white;
+        color: black;
+        -webkit-box-shadow: 0px 0px 25px white;
+        
+    }
+
+    canvas{
+        border: 0px solid white;
+        
+    }
+
+    /*Maquetacion principal*/
+
+    body{
+        background: grey;
+        background: url('../img/negro.png'),url('../img/azul.png'),url('../img/fondo.jpg');
+        margin:0px;
+        text-align: center;
+     
+    }
+
+    #principal{
+        height:100%;
+        margin:auto;
+        position: relative;
+        text-align: left;
+        width:80%;
+    }
+
+    #cajaheader{
+        background: rgba(255,255,255,0.5);
+        height:100px;
+        position: absolute;
+        width: 100%;
+    }
+
+    header{
+        display:table;
+        height:100px;
+        margin: auto;
+        overflow: hidden;
+        text-align: left;
+        width:100%;
+        /*background: darkgrey;*/
+        
+    }
+
+    footer{
+        background: rgba(0,0,0,0.5);
+        border: 2px solid white;
+        border-radius: 0px 0px 5px 35px;
+        box-shadow: 0px 0px 10px white;
+        display:table;
+        margin:0px;
+        padding:0px;
+        text-align:center;
+        width:100%;
+
+        -moz-border-radius: 0px 0px 5px 35px;
+        -o-border-radius: 0px 0px 5px 35px;
+        -webkit-border-radius: 0px 0px 5px 35px;
+
+        -moz-box-shadow: 0px 0px 10px white;
+        -o-box-shadow: 0px 0px 10px white;
+        -webkit-box-shadow: 0px 0px 10px white;
+        
+    }
+
+    /*contenido */
+
+    #contenido{
+        border-top: 0px solid white;
+        border-right: 2px solid white;   
+        border-bottom: 2px solid white;
+        border-left: 2px solid white;
+        width:100%;
+        
+        background: rgba(255,255,255,0.5);
+        box-shadow: 0px 0px 10px white;
+        -moz-box-shadow: 0px 0px 10px white;
+        -webkit-box-shadow: 0px 0px 10px white;
+        -o-box-shadow: 0px 0px 10px white;
+    }
+
+    article{
+        background: rgba(79, 130, 177, 0.5);
+        border: 1px solid white;
+        border-radius: 0px 25px 0px 25px;
+        box-shadow: 3px 3px 10px black;
+        color: rgba(255,255,255,1);
+        /*background: white;*/
+        height:100%;
+        margin:10px;
+        opacity:1;
+        padding: 10px 10px 10px 150px;
+        transform:scale(1,1);
+        width:55%;
+        transition: opacity 1s, box-shadow 1s, transform 1s;
+        -webkit-border-radius: 0px 25px 0px 25px;
+        -webkit-box-shadow: 3px 3px 10px black;
+        -webkit-transition: opacity 1s, -webkit-box-shadow 1s, -webkit-transform 1s, background 1s, color 1s;
+        -webkit-transform:scale(1,1);
+    }
+
+    article:hover{
+        color: rgba(0,0,0,1);
+        background:rgba(255,255,255,1);
+        opacity:1;
+        transform:scale(1.1,1.1);
+        -webkit-transform:scale(1.1,1.1);
+    }
+
+    time{
+        float:right;
+        font-family:ubuntuRegular;
+        font-size:10px;
+    }
+
+    article:hover{
+        box-shadow: 0px 0px 25px white;
+        -webkit-box-shadow: 0px 0px 25px white;
+    }
+
+    aside{
+        background: rgba(172, 197, 223, 0.5);
+        border: 1px solid white;
+        border-radius: 0px 25px 0px 25px;
+        box-shadow: 3px 3px 10px black;
+        display: inline-table;
+        float: right;
+        margin:10px;
+        padding:10px;
+        text-decoration:none;
+        width:20%;
+        
+        -webkit-border-radius: 0px 25px 0px 25px;
+        -webkit-box-shadow: 3px 3px 10px black;
+        
+    }
+
+    aside:hover{
+        background: rgb(232, 240, 234);
+        box-shadow: 0px 0px 25px white;
+        -webkit-box-shadow: 0px 0px 25px white;
+    }
+
+    aside ul{
+        color:white;
+        float:left;
+        font-family:ubuntuRegular;
+        font-size: 10px;
+        height: 100%;
+        list-style: none;
+        padding-left:0;
+        padding-right:0;
+        text-decoration:none;
+        width: 100%;
+    }
+
+    #sobremi{
+        background:blue;
+        background:rgba(0, 0, 0, 0.5);
+        color:white;
+        display:table;
+        height:120px;
+        font-size: 12px;
+        overflow:hidden;
+        text-decoration:none;
+        text-align:justify;
+        width:100%;
+        
+    }
+
+    #sobremi a{
+        color: white;
+        text-decoration: none;
+    }
+
+    #mifoto{
+        color:white;
+        font-family:ubuntuBold;
+        font-size: 40px;
+        height:100px;
+        text-align:left;
+        width:100px;
+        
+        background:url('../css/familia.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: box;
+        
+        animation: parpadeo 5s;
+        animation-iteration-count:infinite;
+        border: 1px solid black;
+        border-radius: 0px 10px 0px 10px;
+        box-shadow: 0px 0px 10px burlywood;
+        float:left;
+        margin:10px;
+        -webkit-border-radius: 0px 10px 0px 10px;
+        -webkit-box-shadow: 0px 0px 10px rgb(18, 24, 24);
+        -webkit-animation: parpadeo 5s;
+        -webkit-animation-iteration-count:infinite;
+        
+    }
+
+    @keyframes parpadeo{
+
+        0% {box-shadow: 0px 0px 10px white;}
+        50% {box-shadow: 0px 0px 50px white;}
+        100% {box-shadow: 0px 0px 10px white;}
+        
+    }
+        
+    @-webkit-keyframes parpadeo{
+        
+        0% {-webkit-box-shadow: 0px 0px 10px white;}
+        50% {-webkit-box-shadow: 0px 0px 50px white;}
+        100% {-webkit-box-shadow: 0px 0px 10px white;}
+        
+    }
+
+    #miequipo{
+
+        color:white;
+        font-family:ubuntuBold;
+        font-size: 20px;
+        height:100px;
+        text-align:left;
+        width:100px;
+        
+        background:url('../css/equipo.jpeg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: box;
+        
+        border: 1px solid white;
+        border-radius: 0px 10px 0px 10px;
+        box-shadow: 0px 0px 10px black;
+        float:left;
+        margin:10px;
+        position:absolute;
+        transform:translate(-140px, 0px);
+        -webkit-border-radius: 0px 10px 0px 10px;
+        -webkit-box-shadow: 0px 0px 10px black;
+        -webkit-transform:translate(-140px, 0px);
+    }
+
+    #logoconsultorio{
+        color:white;
+        font-family:ubuntuBold;
+        font-size: 20px;
+        height:100px;
+        text-align:left;
+        width:100px;
+        
+        background:url('../css/pediatria.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: box;
+        
+        border: 1px solid black;
+        border-radius: 0px 10px 0px 10px;
+        box-shadow: 0px 0px 10px black;
+        float:left;
+        position:absolute;
+        margin:10px;
+        transform:translate(-140px, 0px);
+        -webkit-border-radius: 0px 10px 0px 10px;
+        -webkit-box-shadow: 0px 0px 10px black;
+        -webkit-transform:translate(-140px, 0px);
+    }
+
+    #logotienda{
+        color:white;
+        font-family:ubuntuBold;
+        font-size: 20px;
+        height:100px;
+        text-align:left;
+        width:100px;
+        
+        background:url('../css/tienda.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: box;
+        
+        border: 1px solid white;
+        border-radius: 0px 10px 0px 10px;
+        box-shadow: 0px 0px 10px black;
+        float:left;
+        margin:10px;
+        position:absolute;
+        transform:translate(-140px, 0px);
+        -webkit-border-radius: 0px 10px 0px 10px;
+        -webkit-box-shadow: 0px 0px 10px black;
+        -webkit-transform:translate(-140px, 0px);
+        
+    }
+        
+
+    #miconsejo{
+        color:white;
+        font-family:ubuntuBold;
+        font-size: 20px;
+        height:100px;
+        text-align:left;
+        width:100px;
+        
+        background:url('../css/tranquilo.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: box;
+        
+        border: 1px solid white;
+        border-radius: 0px 10px 0px 10px;
+        box-shadow: 0px 0px 10px black;
+        float:left;
+        margin:10px;
+        position:absolute;
+        transform:translate(-140px, 0px);
+        -webkit-border-radius: 0px 10px 0px 10px;
+        -webkit-box-shadow: 0px 0px 10px black;
+        -webkit-transform:translate(-140px, 0px);
+        
+    }
